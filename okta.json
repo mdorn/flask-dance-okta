@@ -1,0 +1,9 @@
+{
+  "name": "Flask-Dance Okta Example",
+  "description": "Example of logging with Okta using the Flask-Dance library.",
+  "url": "https://developer.okta.com",
+  "logo": "https://developer.okta.com/logo.png",
+  "categories": [
+    "authentication"
+  ]
+}
