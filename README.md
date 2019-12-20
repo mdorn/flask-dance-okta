@@ -1,4 +1,4 @@
-Example of logging with Okta using the [Flask-Dance](https://github.com/singingwolfboy/flask-dance) library.
+Example of logging in with Okta using the [Flask-Dance](https://github.com/singingwolfboy/flask-dance) library.
 
 ```
 git clone https://github.com/mdorn/flask-dance-okta.git
