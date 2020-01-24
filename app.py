@@ -25,4 +25,6 @@ def index():
     if not okta_blueprint.session.token:
         return redirect(url_for('okta.login'))
     resp = okta_blueprint.session.get('{}/userinfo'.format(base_url))
-    return 'You are {email} on Okta'.format(email=resp.json()['email'])
+    msg = '<p>You are {email} on Okta. Access token:</p>'.format(email=resp.json()['email'])
+    token_msg = '<pre style="white-space: pre-wrap;">{token}</pre>'.format(token=okta_blueprint.session.token['access_token'])
+    return '{}{}'.format(msg, token_msg)
