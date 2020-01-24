@@ -11,7 +11,6 @@ okta_blueprint = OAuth2ConsumerBlueprint(
     'okta', __name__,
     client_id=os.environ.get('OKTA_CLIENT_ID'),
     client_secret=os.environ.get('OKTA_CLIENT_SECRET'),
-    base_url=issuer_url,
     token_url='{}/token'.format(issuer_url),
     authorization_url='{}/authorize'.format(issuer_url),
     scope=['openid', 'profile', 'email'],
